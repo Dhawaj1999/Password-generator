@@ -1,0 +1,162 @@
+body{
+    background: #1C1C1C;
+    color: white;
+}
+
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C1C1C;
+    padding: 0 30%;
+}
+
+@media (max-width: 1200px) {
+    #home{
+        padding: 12%;
+    }
+}
+
+.main{
+    border: solid;
+    background: #273549;
+    padding: 5% 10%;
+}
+
+h1{
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1;
+}
+
+h3{
+    margin-top: 3%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8%;
+}
+
+input{
+    margin: 5% 0 2% 0;
+}
+
+
+
+hr{
+    color: #2F3E53;
+    border: 1px solid #c6ccd4;
+    margin: 20px 5px;
+}
+
+span{
+    color: #4ADF86;
+}
+
+
+button{
+    margin: 7% 0 2% 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 9px 15px;
+    border-radius: 6px;
+    border: none;
+    background: #10B981;
+    color: white;
+}
+
+.btn-container{
+    padding: 2px 0;
+}
+
+.password1, .password2{
+   color: #10B981;
+   width: 210px;
+   height: 40px;
+   background: #041a39;
+   text-align: center;
+   font-size: 16px;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   padding: 8px 20px;
+   border-radius: 6px;
+   margin: 5px auto;
+}
+
+@media (max-width: 480px) {
+    #home{
+        padding: 5%;
+    }
+
+
+}
+
+
+.control {
+    font-family: 'Inter', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.control_indicator {
+position: absolute;
+top: 2px;
+left: 0;
+height: 20px;
+width: 20px;
+background: none;
+border: 1px solid #fff;
+border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+background: #0e6647;
+}
+.control input:disabled ~ .control_indicator {
+background: #e6e6e6;
+opacity: 0.6;
+pointer-events: none;
+}
+.control_indicator:after {
+box-sizing: unset;
+content: '';
+position: absolute;
+display: none;
+}
+.control input:checked ~ .control_indicator:after {
+display: block;
+}
+.control-checkbox .control_indicator:after {
+left: 8px;
+top: 4px;
+width: 3px;
+height: 8px;
+border: solid #ffffff;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+border-color: #7b7b7b;
+}
