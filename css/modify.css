@@ -102,7 +102,7 @@ button{
     position: relative;
     padding-left: 35px;
     margin-bottom: 8px;
-    padding-top: 3px;
+    padding-top: 0;
     cursor: pointer;
     font-size: 16px;
 }
