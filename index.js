@@ -201,8 +201,8 @@ function generatePassword(){
         }
     
         for(let j = 0; j < 15; j++){
-            let random = Math.floor(Math.random() * lowerAndSymbols.length)
-            document.querySelector(".password2").innerHTML += lowerAndSymbols[random]
+            let random = Math.floor(Math.random() * lowerAndNumber.length)
+            document.querySelector(".password2").innerHTML += lowerAndNumber[random]
         }
     
     }
@@ -217,8 +217,8 @@ function generatePassword(){
         }
     
         for(let j = 0; j < 15; j++){
-            let random = Math.floor(Math.random() * lowerAndNumber.length)
-            document.querySelector(".password2").innerHTML += lowerAndNumber[random]
+            let random = Math.floor(Math.random() * lowerAndSymbols.length)
+            document.querySelector(".password2").innerHTML += lowerAndSymbols[random]
         }
     
     }
