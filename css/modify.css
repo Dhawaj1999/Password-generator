@@ -33,11 +33,17 @@ h1{
 }
 
 h3{
-    margin-top: 3%;
+    margin-top: 5%;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 8%;
+}
+
+@media (max-width: 480px) {
+    #home{
+        padding: 5%;
+    }
 }
 
 input{
@@ -85,14 +91,6 @@ button{
    padding: 8px 20px;
    border-radius: 6px;
    margin: 5px auto;
-}
-
-@media (max-width: 480px) {
-    #home{
-        padding: 5%;
-    }
-
-
 }
 
 
